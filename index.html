@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>初期設定</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" type="image/png" href="images/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" type="image/png" href="images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" type="image/png" href="images/icon/favicon-16x16.png">
+    <link rel="manifest" href="images/icon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="container">
+        <div class="title_container">
+            <h2 class="title">はじめて使用する前の準備</h2>
+        </div>
+        <div class="komidashi_container">
+            <h2 class="komidashi">1. Googleカレンダーにアクセス</h2>
+        </div>
+        <p class="p1"><a href="https://calendar.google.com/calendar">Googleカレンダー</a>にアクセスし、ログインします。</p>
+        <h2><br></h2>
+        <div class="komidashi_container">
+            <h2 class="komidashi">2. 共有設定</h2>
+        </div>
+        <p class="p1">予定を自動登録するため、自動登録botのユーザとカレンダーを共有します。<br>この設定により、他人(作者含む)が予定を取得できるようになることはありません。</p>
+        <h2><br></h2>
+        <div class="image_container">
+            <p class="p2">① 設定を開きます</p>
+            <img class="images" src="images/settei.png" alt="設定を開く">
+        </div>
+        <div class="image_container">
+            <p class="p2">② 「マイカレンダーの設定」から、自分のアカウント名を選択します。</p>
+            <img class="images" src="images/myCalendar.png" alt="共有設定">
+        </div>
+        <div class="image_container">
+            <p class="p2">③ 「特定のユーザーまたはグループと共有する」から、<br>&nbsp;&nbsp;&nbsp;&nbsp;「ユーザーやグループを追加」を選択します。</p>
+            <img class="images" src="images/share.png" alt="ユーザーを追加">
+        </div>
+        <div class="image_container">
+            <p class="p2">④ 以下のメールアドレスを追加し、<br>&nbsp;&nbsp;「権限」で「予定の表示」を選択します。</p>
+            <div class="adress_container">
+                <button class="copy_bt" onclick="copyToClipboard()">
+                  <img src="images/copy.png" alt="Button Image" style="width: 18px; height: auto;">
+                </button>
+                <span class="p_container" id="copy_text">autocalendaraccount@autocalender-397211.iam.gserviceaccount.com</span>
+            </div>
+            <img class="images" src="images/menu.png" alt="権限設定">
+        </div>
+        <div class="komidashi_container">
+            <h2 class="komidashi">以上で設定は終了です。おつかれさまでした！</h2>
+        </div>
+        <a class="p1" href="https://autocalendar.onrender.com/top/">アプリケーションに戻る</a>
+    </div>
+    <p class="p3">©Copyright 2023 Yuta Matsumura All rights reserved.</p>
+</body>
+
+    <script>
+        function copyToClipboard() {
+            var copyText = document.getElementById("copy_text");
+            var textArea = document.createElement("textarea");
+            textArea.value = copyText.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("Copy");
+            textArea.remove();
+        }           
+    </script>
+
+</html>

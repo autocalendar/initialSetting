@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bccfd6;
+}
+
+header {
+    background-color: #ffffff;
+    color: #190f0c;
+    border-bottom: 2px solid #fefbf9;
+    text-align: center;
+    height: auto;
+    padding: 5px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.images {
+    max-width: 100%;
+    height: auto;
+    width: 65%;
+    display: block;
+    margin: 10px auto;
+    margin-bottom: 10%;
+    border: 1px solid #eeeeee;
+}
+
+.title_container{
+    background-color: #eeeeee;
+    border-bottom: solid 3px #cccccc;
+    border-left: solid 5px #eb88a5;
+    height: 60px;
+    margin-bottom: 7%;
+}
+.title{
+    font-size: 24px;
+    margin: 4%;
+    top: 0%;
+    left: 0;
+    line-height: 60px;
+}
+
+
+.komidashi_container{
+    border-left: solid 4px #82a3cd;
+    margin-left: 3%;
+}
+.komidashi{
+    font-size: 20px;
+    margin-left: 1%;
+}
+
+.p1{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 5%;
+}
+.p2{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 4%;
+    margin-right: 14%;
+}
+.p3{
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.image_container{
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #97afcc;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+.adress_container {
+    display: flex;
+    align-items: center;
+}
+.p_container{
+    margin-left: 10px; 
+    margin-right: 10%;
+    border-radius: 15px;
+    padding: 1%;
+    white-space: nowrap;
+	overflow: hidden;
+    background-color: #dadce0;
+    font-size: 14px;
+}
+.copy_bt{
+    margin-left: 10%;
+    background-color: transparent;
+    border: none;
+    padding: 0;   
+}
+.copy_bt image{
+    width: 25px;
+    height: auto;
+}
+.copy_bt:hover {
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    margin-right: -2px;
+    border-radius: 20%;
+}
+
+@media screen and (max-width: 520px) {
+    .container {
+        padding: 7px;
+    }
+    .images {
+        width: 90%;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .komidashi{
+        font-size: 20px;
+        margin-left: 1%;
+    } 
+    .p2{
+        font-size: 16px;
+        line-height: 1.5;
+        margin-left: 4%;
+        margin-right: 4%;
+    }   
+    .image_container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .p_container{
+        margin-left: 5px; 
+        margin-right: 5%;
+        border-radius: 10px;
+    }
+    .copy_bt{
+        margin-left: 5%;  
+    }
+}
